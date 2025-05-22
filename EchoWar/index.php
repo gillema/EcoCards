@@ -46,7 +46,7 @@ if (isset($_SESSION['usuario'])) {
     </div>
 
     <a href="cadastrar.php"><button class="cad-btn">cadastrar</button></a>
-    <a href="comprar.php"><button class="com-btn">comprar</button></a>
+    <button class="com-btn" id="comprarBtn">comprar</button>
 
     <!-- Botão para abrir o menu -->
     <button class="menu-toggle" id="menuToggle">
@@ -193,6 +193,20 @@ if (isset($_SESSION['usuario'])) {
                     }
                 }, 100);
             }
+
+            // Verificação de login para o botão comprar
+            const comprarBtn = document.getElementById('comprarBtn');
+            comprarBtn.addEventListener('click', function() {
+                // Verifica se há uma sessão ativa (simplificado para este exemplo)
+                <?php if(isset($_SESSION['usuario'])): ?>
+                    window.location.href = 'comprar.php';
+                <?php else: ?>
+                    const confirmar = confirm('É necessário fazer login, deseja realizar?');
+                    if (confirmar) {
+                        window.location.href = 'cadastrar.php';
+                    }
+                <?php endif; ?>
+            });
         });
 
         // Loader
