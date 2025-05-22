@@ -49,6 +49,11 @@
                 <button type="submit">Entrar</button>
             </form>
         </div>
+
+        <!-- Botão Voltar adicionado aqui -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.php" class="btn-voltar">Voltar para Home</a>
+        </div>
     </div>
 </body>
 </html>
