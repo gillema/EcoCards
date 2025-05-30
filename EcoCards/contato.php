@@ -52,7 +52,7 @@ if (isset($_SESSION['usuario'])) {
             display: flex;
             align-items: flex-start;
             gap: 15px;
-            padding: 20px;
+            padding: 10px;
             background-color: rgba(46, 204, 113, 0.1);
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
