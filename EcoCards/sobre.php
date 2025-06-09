@@ -100,6 +100,12 @@ if (isset($_SESSION['usuario'])) {
 
         <nav class="sidebar-menu">
             <ul>
+                   <li>
+                    <a href="perfil.php">
+                        <i class="fas fa-user"></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
                 <li>
                     <a href="index.php">
                         <i class="fas fa-home"></i>

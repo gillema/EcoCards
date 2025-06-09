@@ -38,142 +38,9 @@ if (isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="icon" href="imagens/logo.png" type="imagens/logo.png">
-    <style>
-        /* Estilos adicionais específicos para a página de contato */
-        .contact-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .contact-method {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            padding: 10px;
-            background-color: rgba(46, 204, 113, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact-method:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .contact-method i {
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .contact-method h3 {
-            margin-bottom: 8px;
-            color: var(--dark-color);
-            font-size: 1.2rem;
-        }
-
-        .contact-method p {
-            margin: 5px 0;
-            text-align: left;
-            color: var(--text-color);
-            font-size: 0.95rem;
-        }
-
-        .contact-method a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-method a:hover {
-            color: var(--secondary-color);
-            text-decoration: underline;
-        }
-
-        .contact-form {
-            margin-top: 40px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--dark-color);
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-family: 'Poppins', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .submit-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            width: 100%;
-            font-size: 1rem;
-        }
-
-        .submit-btn:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .contact-method {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .contact-method i {
-                margin-bottom: 10px;
-            }
-            
-            .contact-method div {
-                text-align: center;
-            }
-            
-            .contact-method p {
-                text-align: center;
-            }
-        }
-    </style>
+   
 </head>
 <body>
     <!-- Navbar -->
@@ -235,6 +102,12 @@ if (isset($_SESSION['usuario'])) {
 
         <nav class="sidebar-menu">
             <ul>
+                    <li>
+                    <a href="perfil.php">
+                        <i class="fas fa-user"></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
                 <li>
                     <a href="index.php">
                         <i class="fas fa-home"></i>
